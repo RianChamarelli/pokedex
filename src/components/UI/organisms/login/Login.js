@@ -1,12 +1,18 @@
 import React from 'react';
-import LogoPoke from '../atoms/logo/LogoPoke';
-import FormLogin from '../molecules/form/FormLogin';
+import LogoPoke from '../../atoms/logo/LogoPoke';
+import QuickAccessList from '../../molecules/quickAccess/QuickAccessList';
+import FormLogin from '../../molecules/form/FormLogin';
 
 const Login = () => {
   return (
     <section>
       <LogoPoke />
-      <FormLogin />
+      <div>
+        <div>
+          <QuickAccessList />
+        </div>
+        <FormLogin />
+      </div>
     </section>
   );
 };
