@@ -1,6 +1,6 @@
 import React from 'react';
 import Input from '../../atoms/input/Input';
-import Button from '../../atoms/button/Button';
+import { Button } from '../../atoms/button/Button.style';
 
 const FormLogin = () => {
   const [user, setUser] = React.useState('');
@@ -27,7 +27,9 @@ const FormLogin = () => {
         value={password}
         onchange={(event) => setPassword(event.target.value)}
       />
-      <Button />
+      <Button margin="10px" padding="10px" fontSize="20px">
+        Entrar
+      </Button>
     </form>
   );
 };
