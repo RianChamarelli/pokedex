@@ -1,18 +1,19 @@
 import React from 'react';
+import { QuickAccessListUl, QuickAccessListLi } from './QuickAccessList.style';
 import GoogleIcon from '../../atoms/icons/GoogleIcon';
 import FacebookIcon from '../../atoms/icons/FacebookIcon';
 
 const QuickAccessList = () => {
   return (
     <>
-      <ul>
-        <li>
+      <QuickAccessListUl>
+        <QuickAccessListLi>
           <GoogleIcon />
-        </li>
-        <li>
+        </QuickAccessListLi>
+        <QuickAccessListLi>
           <FacebookIcon />
-        </li>
-      </ul>
+        </QuickAccessListLi>
+      </QuickAccessListUl>
     </>
   );
 };

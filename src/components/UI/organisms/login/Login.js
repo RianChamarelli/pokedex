@@ -1,19 +1,20 @@
 import React from 'react';
+import { LoginSection, LoginDiv, QuickAccessDiv } from './Login.styled';
 import LogoPoke from '../../atoms/logo/LogoPoke';
 import QuickAccessList from '../../molecules/quickAccess/QuickAccessList';
 import FormLogin from '../../molecules/form/FormLogin';
 
 const Login = () => {
   return (
-    <section>
+    <LoginSection>
       <LogoPoke />
-      <div>
-        <div>
+      <LoginDiv>
+        <QuickAccessDiv>
           <QuickAccessList />
-        </div>
+        </QuickAccessDiv>
         <FormLogin />
-      </div>
-    </section>
+      </LoginDiv>
+    </LoginSection>
   );
 };
 

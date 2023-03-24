@@ -1,4 +1,5 @@
 import React from 'react';
+import { Loginform } from './FormLogin.styled';
 import Input from '../../atoms/input/Input';
 import { Button } from '../../atoms/button/Button.style';
 
@@ -12,7 +13,7 @@ const FormLogin = () => {
   };
 
   return (
-    <form onclick={handleSubmit}>
+    <Loginform onclick={handleSubmit}>
       <Input
         type="email"
         name="user"
@@ -30,7 +31,7 @@ const FormLogin = () => {
       <Button margin="10px" padding="10px" fontSize="20px">
         Entrar
       </Button>
-    </form>
+    </Loginform>
   );
 };
 
